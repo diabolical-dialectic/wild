@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>The art of Tenkara</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{% url 'index' %}" class="logo">PA-WILD LLC.<span></span></a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header>
+
+					<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'main_app/about' %}">About Us</a></li>
+							<li><a href="{% url 'main_app/photo' %}">Photo Gallery</a></li>
+							<li><a href="{% url 'main_app/tenkara' %}">The art of Tenkara</a></li>
+							<li><a href="{% url 'main_app/bushcraft' %}">The art of Bushcraft</a></li>
+							<li><a href="{% url 'main_app/video' %}">Videography</a></li>
+							<!-- <li><a href="{% url 'index' %}">Blog</a></li> -->
+							<!-- <li><a href="{% url 'index' %}">Wild-Social</a></li> -->
+
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="{% url 'users' %}" class="button primary fit">Message Us!</a></li>
+							<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Main -->
+							<section id="main" class="main">
+								<div class="inner">
+									<header class="major">
+										<h1>The Art of Tenkara</h1>
+									</header>
+									<span class="image main"><img src="{% static 'images/tenkara_brown.jpg' %}" alt="" /></span>
+
+									<ul class="actions special">
+										<li><a href="{% url 'users' %}" class="button primary large">START YOUR ADVENTURE</a></li>
+									</ul>
+									<h2>Origins</h2>
+	<p>Tenkara fishing originated in Japan at least 200 years ago. The first reference to tenkara fly-fishing was in 1878 in a book called "Diary of climbing Mt. Tateyama" written by Ernest Mason Satow, an able linguist and British diplomat during the early modernization of Japan. Tenkara fly-fishing originated with professional fishermen in the mountain streams of Japan who found it an effective method of catching the local fish, Yamame, Iwana and Amago.</p>
+
+	<p>Originally the rod was simply a bamboo/cane rod, which was cut and treated, but unlike contemporary western bamboo rods, they were not "manufactured" (i.e. split and glued back together). Unlike in the western fly-fishing tradition where anglers used heavy wooden rods, in Japan anglers always used bamboo, which is readily available and very light. Because of its light weight, Japanese anglers were able to use very long bamboo rods and reach as far as needed without the need to develop reels for the short rods developed in the west.</p>
+
+	<h2>Equipment</h2>
+	<p>Tenkara fishing can be seen as a streamlined counterpart to western fly-fishing. The equipment is designed to direct focus to the actual fishing and catching of the fish, not to cause a major preoccupation with the equipment. Only a rod, tenkara line and fly are necessary for tenkara fishing (no reel is used).
+
+	The appeal of tenkara is its elegant simplicity. There are also other advantages of using the long tenkara rods when fishing in mountain streams, primarily the lightness of the line and delicate presentation. A long rod allows for precise placement of the fly on small pools and allows for holding the fly in place on the other side of a current. The other main advantage of using the long tenkara rod is precise control for manipulation of the fly.</P>
+
+	Rod: A very long and flexible rod (usually telescopic) is used in tenkara fishing. The rods normally range from 3.3 to 4.5 meters (11 to 15 ft) long. These rods were originally made of bamboo, but are nowadays made with carbon and/or fiber glass. They also have a handle similar to fly-fishing rods that can be made of wood (the more prized rods) or cork.
+
+	Line: As in fly-fishing, it is the tenkara line that propels the weightless fly forward. In tenkara, the traditional and most commonly used line is a tapered furled line (twisted monofilament), of the same length or slightly shorter than the rod. The main advantage of furled lines is the delicate presentation and ease of casting. Alternatively, a tenkara "level" line can be used. Level lines are specially formulated fluorocarbon adjusted to the desired length. They are easier to cast against the wind.
+
+	The traditional tenkara line has a loop of braided line at its thicker end. This braided line is used to tie the tenkara line directly to the tip of the rod by using a cow hitch (aka: girth hitch) knot. The line at the rod's tip needs to have a stopper knot, which will hold the cow hitch in place. It is a very secure method to attach the line.
+
+	Tippet: This is the same as a regular fly-fishing tippet, and is used to connect the fly to the line (which is too thick to tie directly to the fly). Usually between 30 cm to 1 meter of tippet is added to the end of the line. This is typically referred to in Japanese as "hea" (for hair).
+
+	Fly: Artificial flies are used in tenkara fly-fishing. These are tied with thread, feathers and sometimes fur as in western fly-fishing. Traditionally a special reverse hackle wet-fly is used. In Japan it is known as "kebari". These traditional Japanese flies differ from most Western flies, in that the hackle is tied facing forward. See traditional tenkara flies here My Best Streams by Yoshikazu Fujioka.
+								</div>
+							</section>
+
+					</div>
+
+          <!-- Footer -->
+            <footer id="footer">
+              <div class="inner">
+                <ul class="icons">
+									<li><a href="https://twitter.com/pawild1" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/PA-Wild-LLC-2078341429151608/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.youtube.com/channel/UC1kDzWdjJ5qTH3selkTbyDg/" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="https://www.instagram.com/info.pawild/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                </ul>
+              </div>
+              <a href="{% url 'index' %}"><p class="copyright">&copy; MJF-Digtal. All rights reserved.</p></a>
+            </footer>
+
+        </div>
+
+      <!-- Scripts -->
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+        <script src="{% static 'assets/js/browser.min.js' %}"></script>
+        <script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'assets/js/util.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+
+    </body>
+    </html>

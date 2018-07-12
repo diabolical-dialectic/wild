@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Photo Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{% url 'index' %}" class="logo">PA-WILD LLC.<span></span></a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header>
+
+					<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'main_app/about' %}">About Us</a></li>
+							<li><a href="{% url 'main_app/photo' %}">Photo Gallery</a></li>
+							<li><a href="{% url 'main_app/tenkara' %}">The art of Tenkara</a></li>
+							<li><a href="{% url 'main_app/bushcraft' %}">The art of Bushcraft</a></li>
+							<li><a href="{% url 'main_app/video' %}">Videography</a></li>
+							<!-- <li><a href="{% url 'index' %}">Blog</a></li> -->
+							<!-- <li><a href="{% url 'index' %}">Wild-Social</a></li> -->
+
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="{% url 'users' %}" class="button primary fit">Message Us!</a></li>
+							<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Main -->
+							<section id="main" class="main">
+								<div class="inner">
+									<header class="major">
+										<h1>PHOTO GALLERY</h1>
+										<h3>PA-WILD</h3>
+									</header>
+
+									<!-- Image -->
+									<span class="image fit"><img src="{% static 'images/pa_wild_banner.jpg' %}" alt="" /></span>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/PT1.jpg' %}" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/BFT1.jpg' %}" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/LST1.jpg' %}" alt="" /></span></div>
+												<!-- Break -->
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/fish1.jpg' %}" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/fish2.jpg' %}" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/fish3.jpg' %}" alt="" /></span></div>
+												<!-- Break -->
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/about_pat.jpg' %}" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/about_gavin.jpg' %}" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="{% static 'images/about_mark.jpg' %}" alt="" /></span></div>
+											</div>
+										</div>
+										<!-- Image -->
+										<span class="image fit"><img src="{% static 'images/about_banner.jpg' %}" alt="" /></span>
+											<div class="box alt">
+												<div class="row gtr-50 gtr-uniform">
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/rocks_mark.jpg' %}" alt="" /></span></div>
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/hike_pat.jpg' %}" alt="" /></span></div>
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/fire1.jpg' %}" alt="" /></span></div>
+													<!-- Break -->
+													<!-- <div class="col-4"><span class="image fit"><img src="{% static 'images/pic07.jpg' %}" alt="" /></span></div>
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/pic05.jpg' %}" alt="" /></span></div>
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/pic06.jpg' %}" alt="" /></span></div>
+													<!-- Break -->
+													<!-- <div class="col-4"><span class="image fit"><img src="{% static 'images/pic06.jpg' %}" alt="" /></span></div>
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/pic07.jpg' %}" alt="" /></span></div>
+													<div class="col-4"><span class="image fit"><img src="{% static 'images/pic05.jpg' %}" alt="" /></span></div> --> 
+												</div>
+											</div>
+											<ul class="actions stacked">
+												<li><a href="{% url 'users' %}" class="button primary fit">Message Us!</a></li>
+												<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+											</ul>
+									</div>
+
+								</div>
+							</section>
+
+          <!-- Footer -->
+  					<footer id="footer">
+  						<div class="inner">
+  							<ul class="icons">
+									<li><a href="https://twitter.com/pawild1" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/PA-Wild-LLC-2078341429151608/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.youtube.com/channel/UC1kDzWdjJ5qTH3selkTbyDg/" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="https://www.instagram.com/info.pawild/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+  							</ul>
+  						</div>
+  						<a href="http://www.mjf-digital.com"><p class="copyright">&copy; MJF-Digtal. All rights reserved.</p></a>
+  					</footer>
+
+  			</div>
+
+  		<!-- Scripts -->
+  			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+  			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+  			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+  			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+  			<script src="{% static 'assets/js/util.js' %}"></script>
+  			<script src="{% static 'assets/js/main.js' %}"></script>
+
+  	</body>
+  </html>

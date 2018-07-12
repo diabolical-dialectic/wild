@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>VIDEOGRAPHY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{% url 'index' %}" class="logo">PA-WILD LLC.<span></span></a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header>
+
+					<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'main_app/about' %}">About Us</a></li>
+							<li><a href="{% url 'main_app/photo' %}">Photo Gallery</a></li>
+							<li><a href="{% url 'main_app/tenkara' %}">The art of Tenkara</a></li>
+							<li><a href="{% url 'main_app/bushcraft' %}">The art of Bushcraft</a></li>
+							<li><a href="{% url 'main_app/video' %}">Videography</a></li>
+							<!-- <li><a href="{% url 'index' %}">Blog</a></li> -->
+							<!-- <li><a href="{% url 'index' %}">Wild-Social</a></li> -->
+
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="{% url 'users' %}" class="button primary fit">Message Us!</a></li>
+							<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Main -->
+							<section id="main" class="main">
+								<div class="inner">
+									<header class="major">
+										<h1>VIDEOGRAPHY</h1>
+									</header>
+									<span class="image main"><img src="{% static 'images/pa_wild_banner.jpg' %}" alt="" /></span>
+									<section class="main alt" id="first">
+										<header>
+											<h2>Full HD video</h2>
+											<p>Our team of experienced outdoorsmen and videographers will capture your next adventure in stunning full HD/4k video. We employ hand held gimbals, stadicams, and drone footage to bring your adventure to life in ways that you will want to watch over and over again.</p>
+											<br>
+											<p>Check out some of our older videos below:</p>
+										</header>
+										<div class="inner">
+											<article class="post style2">
+												<div class="content">
+													<header>
+														<span class="category">Pinchot Trail</span>
+														<h3>Overnight hike with tenkara fishing.</h3>
+													</header>
+												</div>
+												<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ga6EVUHIQNE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe /></center>
+											</article>
+											<article class="post style2">
+												<div class="content">
+													<br>
+													<br>
+													<header>
+														<span class="category">John P Saylor Trail</span>
+														<h3>Solo overnight on the beautiful John P Saylor Trail</h3>
+													</header>
+												</div>
+												<center><iframe width="560" height="315" src="https://www.youtube.com/embed/XzR2NavYMKo" frameborder="5" allow="autoplay; encrypted-media" allowfullscreen></iframe /></center>
+											</article>
+											<article class="post style2">
+												<div class="content">
+													<br>
+													<br>
+													<header>
+														<span class="category">Ralph Stover State Park HIGH ROCKS (Vista)</span>
+														<h3>Day hike with bouldering at Ralph Stover State Park.</h3>
+													</header>
+												</div>
+												<center><iframe width="560" height="315" src="https://www.youtube.com/embed/JyukLCBBIxc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe /></center>
+											</article>
+											<article class="post style2">
+												<div class="content">
+													<br>
+													<br>
+													<header>
+														<span class="category">Loyalsock Creek</span>
+														<h3>Overnight short backpacking and fishing on the Loyalsock Creek.</h3>
+													</header>
+												</div>
+												<center><iframe width="560" height="315" src="https://www.youtube.com/embed/h2w90wxbJEI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe /></center>
+											</article>
+											<article class="post style2">
+												<div class="content">
+													<br>
+													<br>
+													<header>
+														<span class="category">Black Forest Trail</span>
+														<h3>Multi-night backpacking and tenkara excursion on the Black Forest Trail.</h3>
+													</header>
+												</div>
+												<center><iframe width="560" height="315" src="https://www.youtube.com/embed/mPd7Ev_d9PE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe /></center>
+											</article>
+											<article class="post style2">
+												<div class="content">
+													<br>
+													<br>
+													<header>
+														<span class="category">Fire Tower</span>
+														<h3>Quick 5 mile day hike with awesome view from a fire tower.</h3>
+													</header>
+												</div>
+												<center><iframe width="560" height="315" src="https://www.youtube.com/embed/O53Yawi8S7Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe /></center>
+											</article>
+										</div>
+									</section>
+									<br>
+									<br>
+									<ul class="actions special">
+										<li><a href="{% url 'users' %}" class="button primary large">START YOUR ADVENTURE</a></li>
+									</ul>
+
+							</section>
+
+					</div>
+
+          <!-- Footer -->
+  					<footer id="footer">
+  						<div class="inner">
+  							<ul class="icons">
+									<li><a href="https://twitter.com/pawild1" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/PA-Wild-LLC-2078341429151608/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.youtube.com/channel/UC1kDzWdjJ5qTH3selkTbyDg/" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="https://www.instagram.com/info.pawild/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+  							</ul>
+  						</div>
+  						<a href="http://www.mjf-digital.com"><p class="copyright">&copy; MJF-Digtal. All rights reserved.</p></a>
+  					</footer>
+
+  			</div>
+
+  		<!-- Scripts -->
+  			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+  			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+  			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+  			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+  			<script src="{% static 'assets/js/util.js' %}"></script>
+  			<script src="{% static 'assets/js/main.js' %}"></script>
+
+  	</body>
+  </html>

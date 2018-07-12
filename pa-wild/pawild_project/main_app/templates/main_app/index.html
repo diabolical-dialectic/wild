@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>PA-WILD.COM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{% url 'index' %}" class="logo">PA-WILD LLC.<span></span></a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="{% url 'index' %}">Home</a></li>
+						<li><a href="{% url 'main_app/about' %}">About Us</a></li>
+						<li><a href="{% url 'main_app/photo' %}">Photo Gallery</a></li>
+						<li><a href="{% url 'main_app/tenkara' %}">The art of Tenkara</a></li>
+						<li><a href="{% url 'main_app/bushcraft' %}">The art of Bushcraft</a></li>
+						<li><a href="{% url 'main_app/video' %}">Videography</a></li>
+						<!-- <li><a href="{% url 'index' %}">Blog</a></li> -->
+						<!-- <li><a href="{% url 'index' %}">Wild-Social</a></li> -->
+
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="{% url 'users' %}" class="button primary fit">Message Us!</a></li>
+						<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+					</ul>
+				</nav>
+
+				<!-- Banner -->
+					<section id="banner" data-video="{% static 'images/banner' %}">
+						<div class="inner">
+							<header>
+								<h1>PA-WILD.COM</h1>
+								<p>Creating opportunities for adventure, learning, team building and dialogue in and about the wild places. <br />
+								Bringing the wild places of your imigination to life.</p>
+							</header>
+							<ul class="actions special">
+								<li><a href="#four" class="button primary large">START YOUR ADVENTURE</a></li>
+							</ul>
+						</div>
+						<a href="#four" class="more">Learn More</a>
+						<video src="{% static 'images/drive3.mp4' %}" muted autoplay loop playsinline></video>
+					</section>
+
+					<!-- Four -->
+						<section id="four" class="main special">
+
+							<div class="inner">
+								<header>
+									<br>
+									<br>
+									<br>
+
+									<h2>WHAT WE DO:</h2>
+								</header>
+								<div class="features">
+									<section>
+										<a href="#wrapper"><span i class="fa fa-compass" style="font-size:48px;color:black"></i></span></a>
+										<br>
+										<br>
+										<h3>Guided Trecks</h3>
+										<p>We offer a variety of Guided Trecking packages and can accomodate any size group and skill level.<br>Get ready for an experience you will never want to forget!.</p>
+									</section>
+									<section>
+										<a href="#tenkara"><span i class="fa fa-bullseye" style="font-size:48px;color:lightblue"></i></span></a>
+										<br>
+										<br>
+										<h3>Tenkara Excursions</h3>
+										<p><p>We offer a variety of Tenkara Excursion packages and can accomodate any size group and skill level.<br />
+										Get ready for an experience you will never want to forget!.</p>
+									</section>
+									<section>
+										<a href='#bushcraft'><span <i class="fa fa-tree" style="font-size:48px;color:green"></i></span></a>
+										<br>
+										<br>
+										<h3>Bushcraft Lessons</h3>
+										<p><p>We offer a variety of Bushcraft Lesson packages and can accomodate and size group and skill level.<br />
+										Get ready for an experience you will never want to forget!.</p>
+									</section>
+									<section>
+										<a href="video"><span i class="fa fa-video-camera" style="font-size:48px;color:grey"></i></span></a>
+										<br>
+										<br>
+										<h3>Adventure Videography</h3>
+										<p>Let us capture your next adventure in stunning full HD and 4k video. We employ hand held gimbals, stadicams, and drone footage to bring your adventure to life in ways that you will want to watch over and over again.</p>
+									</section>
+								</div>
+							</div>
+						</section>
+				<!-- Wrapper -->
+					<div id="wrapper">
+						<header>
+
+							<h2 align="center">Guided Trecking:</h2>
+						</header>
+						<!-- One -->
+							<section id="one" class="main">
+
+								<div class="inner spotlight style1">
+
+									<div class="content">
+										<header>
+											<h2>Black Forest Trail: (Difficult)</h2>
+										</header>
+										<p>Located in the Tiadaghton State Forest, the Black Forest Trail and it's many side trails reside in Lycoming and Potter counties. The Black Forest Trail is a loop of a little over 43 miles with the trailhead proper being just north of Slate Run, PA. The Black Forest Trail gets its name from the dense hemlocks that once grew here, keeping the forest floor in an everlasting darkness. The trail is challenging with many steep ascents and descents. However, the vistas make it worth the effort.</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image"><img src="{% static 'images/BFT1.jpg' %}" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="main">
+								<div class="inner spotlight alt style2">
+									<div class="content">
+										<header>
+											<h2>Loyalsock Trail: (Moderate)</h2>
+										</header>
+										<p>The Loyalsock Trail is a rugged wilderness backpacking trail. One segment of the LT follows the Native American Towanda Path which predates European settlement. The trail visits a vast array of highlights of the Loyalsock State Forest including, scenic vistas and cascading waterfalls.</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image"><img src="{% static 'images/LST1.jpg' %}" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="main">
+								<div class="inner spotlight style3">
+									<div class="content">
+										<header>
+											<h2>Pinchot Trail: (Easy)</h2>
+										</header>
+										<p>The Pinchot Trail is located in the Lakawana State Forest. On this hike you will experience Blueberry bogs, swamps and healthy hardwood forest with thick understory of Mountain Laurel and Rhododendron.</p>
+									</div>
+									<!--
+										Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+										320x340 or at least the same aspect ratio (16:17).
+									-->
+									<span class="image"><img src="{% static 'images/PT1.jpg' %}" alt="" /></span>
+								</div>
+
+							</section>
+
+
+						<!-- CTA -->
+							<section id="cta" class="main special">
+								<div class="inner">
+									<p>We offer a variety of Guided Trecking packages and can accomodate any size group and skill level.<br />
+									Get ready for an experience you will never want to forget!.</p>
+									<ul class="actions stacked special">
+										<li><a href="{% url 'users' %}" class="button primary large">Get Started</a></li>
+										<li><a href="about" class="button large">Learn More</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+					<!-- Wrapper -->
+						<div id="wrapper">
+							<header id="tenkara">
+								<h2 align="center">Tenkara Excursions: (Most popular destinations)</h2>
+							</header>
+							<!-- One -->
+								<section id="one" class="main">
+
+									<div class="inner spotlight style1">
+
+										<div class="content">
+											<header>
+												<h2>Loyalsock Creek:</h2>
+											</header>
+											<p>Loyalsock Creek flows through the magnificent World’s End State Park. With stocked portion of this stream and an impressive holdover population yeilding some massive trout the fact that you are surrounded by total wilderness is never lost on you. Loyalsock's stunning in-stream geology of river rocks and big boulders make this an awesome experience and prime Tenkara territory.</p>
+										</div>
+										<!--
+											Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+											320x340 or at least the same aspect ratio (16:17).
+										-->
+										<span class="image"><img src="{% static 'images/fish1.jpg' %}" alt="" /></span>
+									</div>
+								</section>
+
+							<!-- Two -->
+								<section id="two" class="main">
+									<div class="inner spotlight alt style2">
+										<div class="content">
+											<header>
+												<h2>Clark Creek:</h2>
+											</header>
+											<p>This beautiful wild stretch of water twenty minutes outside of Harrisburg, PA is an underrated gem. The stream is the water that flows out of the Dehart dam and boasts a large population of wild brown trout and many wild brook.</p>
+										</div>
+										<!--
+											Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+											320x340 or at least the same aspect ratio (16:17).
+										-->
+										<span class="image"><img src="{% static 'images/fish2.jpg' %}" alt="" /></span>
+									</div>
+								</section>
+
+							<!-- Three -->
+								<section id="three" class="main">
+									<div class="inner spotlight style3">
+										<div class="content">
+											<header>
+												<h2>Slate Run:</h2>
+											</header>
+											<p>Slate Run is one of Pennsylvania's few freestone streams and is prime Tenkara water located in the rugged, mountainous setting along the Black Forest Trail.
+Wild brook trout and a few brown trout reside in the upper part of the stream and wild brown trout make their home in the lower section. While most anglers prefer
+the brown trout fishing in the lower section we use our Tenkara skills to conquer the uppper.</p>
+										</div>
+										<!--
+											Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+											320x340 or at least the same aspect ratio (16:17).
+										-->
+										<span class="image"><img src="{% static 'images/fish3.jpg' %}" alt="" /></span>
+									</div>
+								</section>
+
+
+							<!-- CTA -->
+								<section id="cta" class="main special">
+									<div class="inner">
+										<p>We offer a variety of Tenkara Excursion packages and can accomodate any size group and skill level.<br />
+										Get ready for an experience you will never want to forget!.</p>
+										<ul class="actions stacked special">
+											<li><a href="{% url 'users' %}" class="button primary large">Get Started</a></li>
+											<li><a href="{% url 'main_app/tenkara' %}" class="button large">Learn More</a></li>
+										</ul>
+									</div>
+								</section>
+
+						</div>
+						<div id="wrapper">
+							<header id="bushcraft">
+								<h2 align="center">Bushcraft Lessons:</h2>
+							</header>
+							<!-- One -->
+								<section id="one" class="main">
+
+									<div class="inner spotlight style1">
+
+										<div class="content">
+											<header>
+												<h2>Fire:</h2>
+											</header>
+											<p>Our classes will provide you with simple repeatable simple steps to make sure you will never struggle to get a fire going again. There is nothing worse after a long day in the backcountry than getting to camp and facing a long battle to get your fire started, especially when you are cold and hungry! Your PA-Wild guides will teach you our six simple steps to ensure you have your campfire blazing in no time.</p>
+										</div>
+										<!--
+											Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+											320x340 or at least the same aspect ratio (16:17).
+										-->
+										<span class="image"><img src="{% static 'images/Bythecampfire.jpg' %}" alt="" /></span>
+									</div>
+								</section>
+
+							<!-- Two -->
+								<section id="two" class="main">
+									<div class="inner spotlight alt style2">
+										<div class="content">
+											<header>
+												<h2>Shelter:</h2>
+											</header>
+											<p> In this course you will learn how to build 5 different bushcraft shelters that you can craft using natural resources that can be found in the woods. It's important to be able to build shelters out of natural resources so that you will be able to survive in the woods even if you have a lack of man-made materials.</p>
+										</div>
+										<!--
+											Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+											320x340 or at least the same aspect ratio (16:17).
+										-->
+										<span class="image"><img src="{% static 'images/shelter2.jpg' %}" alt="" /></span>
+									</div>
+								</section>
+
+							<!-- Three -->
+								<section id="three" class="main">
+									<div class="inner spotlight style3">
+										<div class="content">
+											<header>
+												<h2>Navigation:</h2>
+											</header>
+											<p>Navigation is a foundational bushcraft skill around which all other bushcraft skills should be built. The skill to navigate effectivly in teh outdoors is an absolutely key if you plan to venture into the backcountry and its importance grows in direct proportion to the remoteness of the environment. </p>
+										</div>
+										<!--
+											Note: You can replace the image below with a JPEG or PNG. Just make sure it's exactly
+											320x340 or at least the same aspect ratio (16:17).
+										-->
+										<span class="image"><img src="{% static 'images/compassonatopographicalmap.jpg' %}" alt="" /></span>
+									</div>
+								</section>
+
+
+							<!-- CTA -->
+								<section id="cta" class="main special">
+									<div class="inner">
+										<p>We offer a variety of Bushcraft Lesson packages and can accomodate and size group and skill level.<br />
+										Get ready for an experience you will never want to forget!.</p>
+										<ul class="actions stacked special">
+											<li><a href="{% url 'users' %}" class="button primary large">Get Started</a></li>
+											<li><a href="{% url 'main_app/bushcraft' %}" class="button large">Learn More</a></li>
+										</ul>
+									</div>
+								</section>
+
+						</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/pawild1" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/PA-Wild-LLC-2078341429151608/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC1kDzWdjJ5qTH3selkTbyDg/" class="icon alt fa-youtube"><span class="label">YouTube</span></a></li>
+								<li><a href="https://www.instagram.com/info.pawild/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+						</div>
+						<a href="http://www.mjf-digital.com"><p class="copyright">&copy; MJF-Digtal. All rights reserved.</p></a>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
